@@ -1,0 +1,28 @@
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15%;
+  border: 2px solid #ffd428;
+  border-radius: 10px;
+}
+.radio-button {
+  margin: 10px;
+}
+.row{
+  display: flex;
+  width: 100%;
+}
+.cell{
+  display: table-cell;
+  width: 50%;
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+  width: 100%;
+}
+mat-card-header{
+  margin: 5% 15%;
+}
+

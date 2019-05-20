@@ -1,0 +1,39 @@
+<div *ngIf="condition; then start else no_button"></div>
+<ng-template #start >
+  <mat-card>
+    <mat-card-header>
+      <div class="center">
+        <button mat-raised-button type="" ngclass="startbutton" (click)="startQuiz()"
+                  *ngIf="show">Start Quiz</button>
+        </div>
+    </mat-card-header>
+    <div class="center">
+      <p *ngIf="!show">{{showResult}}</p>
+    </div>
+  </mat-card>
+</ng-template>
+<ng-template #no_button>
+  <mat-card>
+    <div class="center">
+      <mat-card-header>{{data.question}}</mat-card-header>
+    </div>
+    <mat-card-content>
+      <mat-radio-group aria-labelledby="" class="radio-group" [(ngModel)]="answerUser">
+        <mat-radio-button class="radio-button" *ngFor="let answer of data.answers" [value]="answer">
+          {{answer}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+    <div class="row">
+      <div class="cell" >
+        <button mat-raised-button type="" [disabled]="buttonPrev"
+                (click)="prevQuestion()">Back</button>
+      </div>
+      <div class="cell">
+        <button mat-raised-button type="" (click)="nextQuestion()">
+                  {{textButton ? 'Next': 'Done'}}</button>
+      </div>
+    </div>
+  </mat-card>
+</ng-template>
+

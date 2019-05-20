@@ -1,0 +1,41 @@
+[{
+  "question" : "In CSS,select the property used to set the background color of an image?",
+  "answers" : ["background:color",
+                "color:background",
+                "color",
+                "background-color"],
+  "answerRight" : "background-color"
+  },
+  {
+    "question" : "Select the correct HTML tag to make a text italic?",
+    "answers" : ["Italic",
+                  "Il",
+                  "None",
+                  "It"],
+    "answerRight" : "Italic"
+  },
+  {
+    "question" : "Select the appropriate HTML tag for inserting a line break?",
+    "answers" : ["brbr",
+                  "br",
+                  "None",
+                  "break"],
+    "answerRight" : "br"
+  },
+  {
+    "question" : "Select the property that is used to create spacing between HTML elements?",
+    "answers" : ["border",
+                  "spacing",
+                  "padding",
+                  "margin"],
+    "answerRight" : "padding"
+  },
+  {
+    "question" : "Select the correct HTML tag to make a text bold.",
+    "answers" : ["None",
+                  "bo",
+                  "bold",
+                  "b"],
+    "answerRight" : "b"
+  }
+]
